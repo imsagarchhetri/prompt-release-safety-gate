@@ -1,0 +1,10 @@
+[project]
+name = "prompt-release-safety-gate"
+version = "1.0.0"
+description = "CI gate that blocks prompt changes regressing quality, cost, or safety"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-q"

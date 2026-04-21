@@ -1,0 +1,16 @@
+# --- core ---
+pydantic>=2.6
+pydantic-settings>=2.2
+pyyaml>=6.0
+jinja2>=3.1           # HTML/Markdown report rendering
+requests>=2.31        # Slack webhook + Ollama
+
+# --- evals ---
+deepeval>=1.0         # optional DeepEval custom-metric integration
+
+# --- LLM providers (install what you use) ---
+openai>=1.30
+anthropic>=0.25
+
+# --- tests ---
+pytest>=8.0
