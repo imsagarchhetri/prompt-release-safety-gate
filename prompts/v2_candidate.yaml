@@ -1,0 +1,9 @@
+version: v2_candidate
+owner: ai-platform
+description: Candidate — switched to a pricier model and a verbose prompt.
+model: gpt-4o            # ~16x more expensive than gpt-4o-mini
+temperature: 0.7
+system_prompt: |
+  You are an extremely thorough assistant. Think step by step and write a rich,
+  elaborate CRM summary covering every nuance before returning the JSON object
+  with keys: summary, sentiment, next_action, urgency, confidence.
