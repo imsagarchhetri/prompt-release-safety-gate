@@ -7,9 +7,6 @@ A CI gate that runs a regression suite whenever a prompt changes, compares the
 merge** (non-zero exit) if quality, cost, latency, or safety degrade past a
 threshold. Posts a Markdown/HTML report to the PR.
 
->  See [`docs/TUTORIAL.md`](docs/TUTORIAL.md),
-> [`docs/CODE_WALKTHROUGH.md`](docs/CODE_WALKTHROUGH.md) (every file/function with
-> pseudocode), and [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
 
 ## Real stack
 
@@ -76,10 +73,4 @@ Edit `Thresholds` in `app/config.py` (env-overridable): `schema_valid_drop` (2pp
 -  **Needs setup:** real LLM scoring (`llm_provider=openai` + key), Slack alerts
   (`slack_webhook_url`), and the GitHub Action posting on real PRs.
 
-## Interview talking points
 
-- The curated edge-case dataset is the real asset; the runner is commodity.
-- Multi-dimensional scoring — don't collapse to one number too early.
-- Cost/latency as first-class release signals (computed from a price table).
-- Block vs. warn thresholds; non-zero exit to actually stop a merge.
-- DeepEval custom metrics as deterministic, keyless CI checks.
