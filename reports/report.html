@@ -1,0 +1,18 @@
+<!doctype html><html><head><meta charset="utf-8">
+<title>Prompt Release Gate — FAIL</title>
+<style>body{font-family:system-ui;margin:2rem;max-width:780px}
+.v{padding:.3rem .8rem;border-radius:6px;color:#fff;font-weight:700}
+.PASS{background:#16a34a}.WARN{background:#d97706}.FAIL{background:#dc2626}
+table{border-collapse:collapse;width:100%;margin:1rem 0}
+td,th{border:1px solid #ddd;padding:.5rem;text-align:left}</style></head><body>
+<h1>Prompt Release Gate <span class="v FAIL">FAIL</span></h1>
+<p>Baseline <code>v1_production</code> → Candidate <code>v2_candidate</code></p>
+<table><tr><th>Metric</th><th>Baseline</th><th>Candidate</th></tr>
+<tr><td>Schema valid</td><td>100.0%</td><td>100.0%</td></tr>
+<tr><td>Field accuracy</td><td>60.0%</td><td>60.0%</td></tr>
+<tr><td>Avg cost (USD)</td><td>0.000040</td><td>0.000670</td></tr>
+<tr><td>Avg latency (ms)</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>Safety fails</td><td>0</td><td>0</td></tr></table>
+<h3>Blocking reasons</h3><ul><li>avg cost rose 1567% (>20%)</li></ul>
+
+</body></html>
